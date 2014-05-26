@@ -14,28 +14,20 @@
 
 - (id)init {
     if (self = [super init]) {
-//        NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"random words" ofType:@"txt"];
-
-        // this is a command line tool, how to include the text file?
-        NSString *path = @"/Users/wm/Documents/random words 1000.txt";
-
-        NSString *file = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
-
+        NSString *file = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"words" ofType:@"txt"] encoding:NSUTF8StringEncoding error:NULL];
 
         NSMutableArray *array = [NSMutableArray array];
 
-        __block NSString *previous = [@"" retain];
-        __block NSString *prevprevious = [@"" retain];
+        __block NSString *previous;
+        __block NSString *prevprevious;
 
         // make groups of three
         [file enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
 
             NSString *current = [NSString stringWithFormat:@"%@ %@ %@", prevprevious, previous, line];
             [array addObject:current];
-            [prevprevious release];
-            prevprevious = [previous retain];
-            [previous release];
-            previous = [line retain];
+            prevprevious = previous;
+            previous = line;
 
         }];
         
@@ -47,7 +39,6 @@
 }
 
 - (void)testXbyX {
-
     NSDate *start = [NSDate date];
 
     for (NSString *word in self.randomWords) {
@@ -56,9 +47,8 @@
         }
     }
 
-    
     NSTimeInterval timeInterval = fabs([start timeIntervalSinceNow]);
-    NSLog(@"random words X random words: %@ (%ld)", @(timeInterval), self.randomWords.count * self.randomWords.count);
+    NSLog(@"random words X random words: %@ (%u)", @(timeInterval), self.randomWords.count * self.randomWords.count);
 }
 
 - (void)testRandomWordsWarmupWithString:(NSString *)testString {

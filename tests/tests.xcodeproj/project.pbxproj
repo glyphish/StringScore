@@ -19,9 +19,9 @@
 		CE3F4ED21933B47D001594B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F4EBA1933B47D001594B1 /* UIKit.framework */; };
 		CE3F4EDA1933B47D001594B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3F4ED81933B47D001594B1 /* InfoPlist.strings */; };
 		CE3F4EDC1933B47D001594B1 /* testsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F4EDB1933B47D001594B1 /* testsTests.m */; };
-		CE3F4EEA1933B49D001594B1 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F4EE61933B49D001594B1 /* NSString+Score.m */; };
-		CE3F4EEB1933B49D001594B1 /* random words 1000.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE3F4EE71933B49D001594B1 /* random words 1000.txt */; };
-		CE3F4EEC1933B49D001594B1 /* ScorePerfomance.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F4EE91933B49D001594B1 /* ScorePerfomance.m */; };
+		CE3F4EF11933BE9B001594B1 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F4EF01933BE9B001594B1 /* NSString+Score.m */; };
+		CE3F4EF51933BED7001594B1 /* ScorePerfomance.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F4EF31933BED7001594B1 /* ScorePerfomance.m */; };
+		CE3F4EF61933BED7001594B1 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE3F4EF41933BED7001594B1 /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,11 @@
 		CE3F4ED71933B47D001594B1 /* testsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testsTests-Info.plist"; sourceTree = "<group>"; };
 		CE3F4ED91933B47D001594B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3F4EDB1933B47D001594B1 /* testsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testsTests.m; sourceTree = "<group>"; };
-		CE3F4EE51933B49D001594B1 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
-		CE3F4EE61933B49D001594B1 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
-		CE3F4EE71933B49D001594B1 /* random words 1000.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "random words 1000.txt"; sourceTree = "<group>"; };
-		CE3F4EE81933B49D001594B1 /* ScorePerfomance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScorePerfomance.h; sourceTree = "<group>"; };
-		CE3F4EE91933B49D001594B1 /* ScorePerfomance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScorePerfomance.m; sourceTree = "<group>"; };
+		CE3F4EEF1933BE9B001594B1 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
+		CE3F4EF01933BE9B001594B1 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
+		CE3F4EF21933BED7001594B1 /* ScorePerfomance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScorePerfomance.h; path = ../../ScorePerfomance.h; sourceTree = "<group>"; };
+		CE3F4EF31933BED7001594B1 /* ScorePerfomance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScorePerfomance.m; path = ../../ScorePerfomance.m; sourceTree = "<group>"; };
+		CE3F4EF41933BED7001594B1 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = words.txt; path = ../../words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,13 +156,22 @@
 		CE3F4EED1933B511001594B1 /* string score */ = {
 			isa = PBXGroup;
 			children = (
-				CE3F4EE51933B49D001594B1 /* NSString+Score.h */,
-				CE3F4EE61933B49D001594B1 /* NSString+Score.m */,
-				CE3F4EE71933B49D001594B1 /* random words 1000.txt */,
-				CE3F4EE81933B49D001594B1 /* ScorePerfomance.h */,
-				CE3F4EE91933B49D001594B1 /* ScorePerfomance.m */,
+				CE3F4EF21933BED7001594B1 /* ScorePerfomance.h */,
+				CE3F4EF31933BED7001594B1 /* ScorePerfomance.m */,
+				CE3F4EF41933BED7001594B1 /* words.txt */,
+				CE3F4EEE1933BE9B001594B1 /* classes */,
 			);
 			name = "string score";
+			sourceTree = "<group>";
+		};
+		CE3F4EEE1933BE9B001594B1 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F4EEF1933BE9B001594B1 /* NSString+Score.h */,
+				CE3F4EF01933BE9B001594B1 /* NSString+Score.m */,
+			);
+			name = classes;
+			path = ../../classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3F4EC11933B47D001594B1 /* InfoPlist.strings in Resources */,
+				CE3F4EF61933BED7001594B1 /* words.txt in Resources */,
 				CE3F4EC91933B47D001594B1 /* Images.xcassets in Resources */,
-				CE3F4EEB1933B49D001594B1 /* random words 1000.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3F4EEC1933B49D001594B1 /* ScorePerfomance.m in Sources */,
-				CE3F4EEA1933B49D001594B1 /* NSString+Score.m in Sources */,
+				CE3F4EF51933BED7001594B1 /* ScorePerfomance.m in Sources */,
 				CE3F4EC71933B47D001594B1 /* AppDelegate.m in Sources */,
+				CE3F4EF11933BE9B001594B1 /* NSString+Score.m in Sources */,
 				CE3F4EC31933B47D001594B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +474,7 @@
 				CE3F4EE11933B47D001594B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3F4EE21933B47D001594B1 /* Build configuration list for PBXNativeTarget "testsTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +483,7 @@
 				CE3F4EE41933B47D001594B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
